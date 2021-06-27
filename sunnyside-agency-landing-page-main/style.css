@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+
+nav {
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    font-family: 'Barlow',sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width:80%;
+    align-items: center;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    list-style: none;
+    cursor:pointer;
+}
+
+nav button {
+    border-radius: 25px;
+    width: 100px;
+    height:50px;
+    border-width: 0;
+    background-color: white;
+    font-family: 'Fraunces',sans-serif;
+    text-transform: uppercase;
+    
+}
+nav input {
+    position: absolute;
+    width:35px;
+    height:47px;
+    opacity: 0;
+}
+
+
+nav h1 {
+    font-size:2em;
+    font-weight: 800;
+}
+
+
+
+footer {
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color:rgb(79,191,167) ;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+
+
+.first-page {
+    background-image: url("sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    color:white;
+    height:100vh; 
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu img {
+    width:35px;
+}
+
+
+.left-side {
+    display: flex;
+    width:100%;
+    justify-content:center;
+}
+
+.right-side {
+    width:100%;
+}
+
+.first-page-body {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.first-page-body img {
+    margin-top:80px;
+    width: 40px;
+}
+
+.first-page-body h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size:3em;
+
+}
+
+.heading {
+    padding-top:80px;
+    display: flex;
+    justify-content: center;
+}
+.second-page {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    width: 100vw;
+    
+}
+
+.first-half,.second-half,.third-half {
+    width: 100%;
+    height:80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    gap:30px;
+    padding:50px;
+
+}
+
+.left h1, button {
+    font-family: 'Fraunces',sans-serif;
+}
+
+.left h1 {
+    font-size:3em;
+    color:hsl(237, 12%, 33%);
+}
+
+.left h3 {
+    font-family:'Barlow',sans-serif;
+    text-align: start;
+    color:  hsl(240, 6%, 50%);
+    font-weight: 600;
+}
+.left button {
+    background-color: rgba(0,0,0,0);
+    border-width: 0;
+    height:30px;
+    border-bottom-width: 2px;
+    border-color: yellow;
+    text-transform: uppercase;
+}
+
+.right{
+    background-image: url("sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.second-half .right {
+    background-size: cover;
+    background-image:url("sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg");
+    background-position:center;
+}
+.third-half .right, .third-half .left {
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding:20px;
+    padding-top:30%;
+}
+.third-half .left {
+    background-image: url("sunnyside-agency-landing-page-main/images//image-graphic-design.jpg");
+    
+}
+.third-second-half {
+    height:60vh;
+}
+.third-half .right {
+    color:hsl(240, 10%, 16%);
+    background-image: url("sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg");
+}
+
+.third-half h2 {
+    font-family:'Fraunces',sans-serif;
+
+    font-size:3em;
+}
+
+.third-half h4 {
+    font-family : 'Barlow',sans-serif;
+    font-weight: 600;
+
+}
+.headline {
+    padding:40px;
+    display: flex;
+    justify-content: center;
+}
+.testimonials {
+    height:50vh;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap:20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-width: 0;
+    gap:20px;
+    text-align-last: center;
+
+}
+
+.headline {
+    color:hsl(207, 13%, 34%)
+}
+
+.headline h1, .card h5 {
+    font-family: 'Fraunces',sans-serif;
+    
+    
+    
+}
+.card h4 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+}
+
+.card img {
+    width:144px;
+    border-radius: 50%;
+}
+
+.third-second-half {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    font-family:'Barlow',sans-serif;
+    font-size:1.5em;
+    font-weight:800;
+    color:hsl(207, 13%, 34%);
+}
+
+.menu, .socials {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.menu {
+    width: 30%;
+    font-family:'Barlow',sans-serif;
+    font-weight: 600;
+    color:hsl(207, 13%, 34%);
+}
+.socials {
+    height:20%;
+    width: 10%;
+    z-index: 2;
+}
+.socials img:hover, .menu h3:hover, .logo:hover {
+    cursor: pointer;
+}
+
+#navbutton :hover {
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+#image1 {
+    background-image: url("sunnyside-agency-landing-page-main/images/desktop/image-gallery-cone.jpg");
+    background-position: center;
+}
+#image2 {
+    background-image: url("sunnyside-agency-landing-page-main/images/desktop/image-gallery-milkbottles.jpg");
+    background-position: center;
+}
+#image3 {
+    background-image: url("sunnyside-agency-landing-page-main/images/image-gallery-orange.jpg");
+    background-size:cover;
+    background-position: center;
+    
+}
+
+#image4 {
+    background-image: url("sunnyside-agency-landing-page-main/images/image-gallery-sugar-cubes.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width:1200px) {
+    nav ul {
+        width: 80%;
+    }   
+}
+
+@media screen and (max-width:630px) {
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        width:90vw;
+        padding-top:30px;
+        padding-bottom:30px;
+        display: flex;
+        position: absolute;
+        top:-500px;
+        margin-right:60%;
+        flex-direction: column;
+        gap:20px;
+        background-color: white;
+        animation: none;
+    }
+
+    nav ul li {
+        color:gray;
+    }
+
+    nav button {
+        background-color: yellow;
+    }
+
+    .first-page-body img {
+        margin-top:120px;
+        width: 40px;
+    }
+
+    .third-second-half {
+        height:70vh;
+    }
+
+    .second-half .right {
+        order:1;
+    }
+
+    .second-half .left {
+        order:0;
+    }
+
+    .first-page-body h1 {
+        font-size: 2em;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .first-page {
+        height: 100vh;
+        background-image: url("sunnyside-agency-landing-page-main/images/mobile/image-header.jpg");
+    }
+
+   
+    
+    .first-half,.second-half,.third-half {
+        grid-template-columns: 1fr  ;
+        height: 100vh;
+        grid-row-gap:0;
+    
+    }
+
+    .left {
+        height: 50vh;
+        font-size:0.8em;
+
+    }
+
+    .right{
+        height: 70vh;
+        background-image: url("sunnyside-agency-landing-page-main/images/mobile/image-transform.jpg");
+        background-position: center;
+    }
+
+    .second-half {
+        overflow-y: hidden;
+    }
+    .second-half .right {
+        margin-bottom:-80px;
+        height:100%;
+
+        background-image:url("sunnyside-agency-landing-page-main/images/mobile/image-stand-out.jpg");
+        background-position:center;
+    }
+
+    .right, .second-half .right {
+        height:30vh;
+        font-size:0.8em;
+
+    }
+
+    .third-half {
+        height:100vh;
+    }
+    .third-half .left,.third-half .right {
+        height:30vh;
+    
+    }
+
+
+    .third-second-half {
+        width:100%;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap:0;
+    }
+    .testimonials {
+        grid-template-columns: 1fr;
+        height:100vh;
+        font-size: 0.9em;;
+    }
+
+    .card {
+        padding:10px;
+        gap:5px;
+    }
+
+    .testimonials img {
+        transform: scale(0.5);
+    }
+    
+    .menu {
+        width:60%;
+    }
+    
+    .socials {
+        width:40%;
+    }
+
+    #image1 {
+        background-image: url("sunnyside-agency-landing-page-main/images/mobile/image-gallery-cone.jpg");
+        background-position: center;
+    }
+    #image2 {
+        background-image: url("sunnyside-agency-landing-page-main/images/mobile/image-gallery-milkbottles.jpg");
+        background-position: center;
+    }
+    #image3 {
+        background-image: url("sunnyside-agency-landing-page-main/images/mobile/image-gallery-orange.jpg");
+        background-position: center;
+        
+    }
+    
+    #image4 {
+        background-image: url("sunnyside-agency-landing-page-main/images/mobile/image-gallery-sugar-cubes.jpg");
+        background-position: center;
+    }
+   
+}
+
+@media screen and (max-width:375px) {
+    
+    .left {
+        font-size:0.6em;
+
+    }
+    .right, .second-half .right {
+        height:30vh;
+        font-size:0.6em;
+
+    }
+    .testimonials {
+        font-size: 0.6em;
+    }
+    .card {
+        padding-bottom:10px;
+    }
+
+    
+}
+
+@keyframes popupanimation {
+    from {
+        top:-300px;
+    }
+    to {
+        top:80px;
+    }
+    
+}

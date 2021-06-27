@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first-page">
+        <nav>
+            <div class="right-side">
+                <strong><h1>sunnyside</h1></strong>
+
+            </div>
+            <div class="left-side">
+                <ul id ="navbar-ul">
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li id="navbutton"><button >CONTACT</button></li>
+
+                </ul>
+                <div class="hamburger-menu">
+                    <input onclick = "clickChecker()" id="ham-input" type="checkbox">
+                    <img src="sunnyside-agency-landing-page-main/images/icon-hamburger.svg">
+    
+    
+                </div>
+            </div>
+        </nav>
+
+        <div class="first-page-body">
+            <div class="heading">
+                 <h1>WE ARE CREATIVES</h1>
+                 
+            </div>
+
+            <img src="sunnyside-agency-landing-page-main/images/icon-arrow-down.svg">
+
+            
+       </div>
+       
+            
+            
+        </div>
+    </div>
+
+    <div class="second-page">
+        <div class="first-half">
+            <div class="left">
+                <h1>Transform your brand</h1>
+                <h3>We are a full-service creative agency specializing in helping<br> brands grow fast. 
+                    Engage your clients through <br> compelling visuals that do most of the marketing for you.</h3>
+
+                <button> Learn More</button>
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+
+        <div class="second-half">
+            <div class="right">
+            </div>
+            <div class="left">
+                <h1>  Stand out to the right audience</h1>
+                <h3>   Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+                </h3>
+
+                <button> Learn More</button>
+            </div>
+        </div>
+        <div class="third-half">
+            <div class="left">
+                <h2>  Graphic Design
+                </h2>
+
+                <h4>  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+                </h4>
+            </div>
+            <div class="right">
+                <h2>  Photography
+                </h2>
+                <h4>  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="third-page">
+        <div class="third-first-half">
+            <div class="headline">
+                <h1>Client Testimonials</h1>
+            </div>
+            <div class="testimonials">
+                <div class="card">
+                    <img src="sunnyside-agency-landing-page-main/images/image-emily.jpg">
+                    <h4>  We put our trust in Sunnyside and they delivered ,<br> making sure our needs were met and deadlines were always hit.
+                    </h4>
+                    <h5>Emily R.</h5>
+                    <h5>  Marketing Director
+                    </h5>
+                </div>
+                <div class="card"><img src="sunnyside-agency-landing-page-main/images/image-thomas.jpg">
+                    <h4>   Sunnyside’s enthusiasm coupled with their <br>keen interest in our brand’s success made it<br> a satisfying and enjoyable experience.
+                        .
+                    </h4>
+                    <h5>Thomas L.</h5>
+                    <h5>  Chief Operating Officer
+                    </h5></div>
+                <div class="card"><img src="sunnyside-agency-landing-page-main/images/image-jennie.jpg">
+                    <h4>    Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+
+                    </h4>
+                    <h5>Jennie F.</h5>
+                    <h5>  Business Owner
+                    </h5></div>
+            </div>
+        </div>
+        <div class="third-second-half">
+            <div id= "image3" class="image"></div>
+            <div id ="image1" class="image"></div>
+            <div id="image2" class="image"></div>
+            <div id = "image4" class="image"></div>
+        </div>
+        <footer>
+            <div class="logo">
+                <h2>sunnyside</h2>
+            </div>
+            <div class="menu">
+                <h3>About</h3>
+                <h3>Services</h3>
+                <h3>Projects</h3>
+            </div>
+            <div class="socials">
+                <img src="sunnyside-agency-landing-page-main/images/icon-facebook.svg">
+                <img src="sunnyside-agency-landing-page-main/images/icon-pinterest.svg">
+                <img src="sunnyside-agency-landing-page-main/images/icon-twitter.svg">
+                <img src="sunnyside-agency-landing-page-main/images/icon-instagram.svg">
+
+
+
+            </div>
+        </footer>
+    </div>
+    
+
+   
+    <script>
+        let input = document.getElementById("ham-input") 
+        let navbar = document.getElementById("navbar-ul")
+
+        function clickChecker() {
+            if (input.checked ) {
+                navbar.style.animation = "popupanimation 2s forwards"
+            }
+            else {
+                navbar.style.animation= "popupanimation 2s forwards reverse"
+            }
+
+        }
+           
+     
+    </script>
+</body>
+</html>
